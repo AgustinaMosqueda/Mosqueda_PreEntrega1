@@ -1,49 +1,31 @@
-let dias = prompt("quiere saber cuantos días trae el mes? si/no");
-
-if (dias == "si" ) {
-    alert= prompt("elije el mes deseado");
-    }
-    else{
-    alert("que tengas bonito día");
+function comienzo(){
+    alert("Bienvenidos! Los invitamos a interactuar con nosotros. La temática de hoy es calcular la edad de quienes quieran participar");
 }
-switch ("elije el mes deseado") { 
-    case enero:
-        console.log(31);
-        break;
-    case febrero:
-        console.log(31);
-        break;
-    case marzo:
-        console.log(31);
-        break;
-    case abril:
-        console.log(31);
-        break;
-    case mayo:
-        console.log(31);
-        break;
-    case junio:
-        console.log(31);
-        break;
-    case julio:
-        console.log(31);
-        break;
-    case agosto:
-        console.log(31);
-        break;
-    case septiembre:
-        console.log(31);
-        break;
-    case octubre:
-        console.log(31);
-        break;
-    case noviembre:
-        console.log(31);
-        break;
-    case diciembre:
-        console.log(31);
-        break;
-        default:
-            console.log ("ese mes no existe");
-            break;
-};
+
+comienzo();
+let ingreso= prompt(" Si desea continuar escriba 'aceptar' de lo contrario ingrese 'cancelar'");
+if (ingreso != "aceptar"){
+alert ("Gracias por su tiempo");
+} else {
+    alert ("¡COMENCEMOS!")
+}
+
+let nombre;
+do {
+    nombre = prompt("Por favor ingrese su nombre:");
+} while (nombre === "" || nombre === null);
+alert("Hola, " + nombre + ""+" comencemos!");
+
+function resta() {
+    var num1 = parseInt(prompt("Ingrese año actual: "));
+    var num2 = parseInt(prompt("Ingrese año de nacimiento: "));
+    var resultado = num1 - num2;
+    alert("su edad es " + resultado + " años");
+    return resultado;
+}
+
+console.log(resta());
+// resta();
+// alert("usted tiene" + resultado);
+
+
